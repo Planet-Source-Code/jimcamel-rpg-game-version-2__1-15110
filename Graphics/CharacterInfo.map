@@ -1,0 +1,69 @@
+' Format:
+' Variable | x offset(from where the program puts it) | y offset(from where the program puts it) | X pos in image | Y 
+'pos in image | width from X | height from Y |
+'
+' The body and head would be drawn in the same x and y in the program; then this text file repositions the
+' head to fit right
+'
+' i use ! so the program can find the next line of sprite info(not srue if its needed or not); and after the sprite 
+'number is the desription of the sprite; just so people reading the text file knows what it is
+'
+'BODY defines all of the body sprites; torso; feet; belt etc
+'
+'the body/head/variable is listed from bottom to top. BODY is drawn under HEAD in the examples below
+'
+'Each Body/head listed in a row is for the direction of the sprite; right after the BODY you'll see it says the 
+'direction number
+'
+'there would be a sprite defined by a word and gif file above all the info below. this is so that you can include 
+'other gif files with the body; like 
+'shields or an effect (like if the player is in water and we want to show the 
+'water ripple around the player; i can 
+'make a gif file containing a ripple to show over the body. 
+'example:
+'
+'VARIABLE1 = sword.gif
+'WATERRIPPLE1 = water.gif
+'
+'after writing all of this it seems to me like this is a lot of work for you to do.. so if you dont feel like doing 
+'all this dont worry; its just an idea
+
+!0 = Idle
+BODY:0   ;0;0;0;0;48;48  BODY:1   ;0;0;48;0;48;48  BODY:2   ;0;0;96;0;48;48  BODY:3   ;0;0;144;0;48;48  
+HEAD:0   ;9;-14;0;0;32;32  HEAD:1   ;6;-16;0;32;32;32  HEAD:2   ;8;-16;0;64;32;32  HEAD:3   ;10;-16;0;96;32;32
+
+!1 = Walking 1
+BODY:0   ;0;0;0;48;48;48  BODY:1   ;0;0;48;48;48;48  BODY:2   ;0;0;96;48;48;48  BODY:3   ;0;0;144;48;48;48  
+HEAD:0   ;9;-13;0;0;32;32  HEAD:1   ;6;-14;0;32;32;32  HEAD:2   ;8;-15;0;64;32;32  HEAD:3   ;10;-14;0;96;32;32
+
+!2 = Walking 2
+BODY:0   ;0;0;0;96;48;48  BODY:1   ;0;0;48;96;48;48  BODY:2   ;0;1;96;96;48;48  BODY:3   ;0;0;144;96;48;48  
+HEAD:0   ;9;-11;0;0;32;32  HEAD:1   ;6;-12;0;32;32;32  HEAD:2   ;8;-13;0;64;32;32  HEAD:3   ;10;-12;0;96;32;32
+
+!3 = Walking 3
+BODY:0   ;0;0;0;144;48;48  BODY:1   ;0;0;48;144;48;48  BODY:2   ;0;0;96;144;48;48  BODY:3   ;0;0;144;144;48;48  
+HEAD:0   ;9;-13;0;0;32;32  HEAD:1   ;6;-13;0;32;32;32  HEAD:2   ;8;-15;0;64;32;32  HEAD:3   ;10;-13;0;96;32;32
+
+!4 = Walking 4
+BODY:0   ;0;0;0;0;48;48  BODY:1   ;0;0;48;0;48;48  BODY:2   ;0;0;96;0;48;48  BODY:3   ;0;0;144;0;48;48  
+HEAD:0   ;9;-14;0;0;32;32  HEAD:1   ;6;-16;0;32;32;32  HEAD:2   ;8;-16;0;64;32;32  HEAD:3   ;10;-16;0;96;32;32
+
+!5 = Walking 5
+BODY:0   ;0;0;0;192;48;48  BODY:1   ;0;0;48;192;48;48  BODY:2   ;0;0;96;192;48;48  BODY:3   ;0;0;144;192;48;48  
+HEAD:0   ;9;-13;0;0;32;32  HEAD:1   ;6;-13;0;32;32;32  HEAD:2   ;8;-15;0;64;32;32  HEAD:3   ;10;-13;0;96;32;32
+
+!6 = Walking 6
+BODY:0   ;0;1;0;240;48;48  BODY:1   ;0;0;48;240;48;48  BODY:2   ;0;1;96;240;48;48  BODY:3   ;0;0;144;240;48;48  
+HEAD:0   ;9;-11;0;0;32;32  HEAD:1   ;6;-12;0;32;32;32  HEAD:2   ;8;-13;0;64;32;32  HEAD:3   ;10;-12;0;96;32;32
+
+!7 = Walking 7
+BODY:0   ;0;0;0;288;48;48  BODY:1   ;0;0;48;288;48;48  BODY:2   ;0;0;96;288;48;48  BODY:3   ;0;0;144;288;48;48  
+HEAD:0   ;9;-13;0;0;32;32  HEAD:1   ;6;-14;0;32;32;32  HEAD:2   ;8;-15;0;64;32;32  HEAD:3   ;10;-14;0;96;32;32
+
+!8 = Walking 8
+BODY:0   ;0;0;0;0;48;48  BODY:1   ;0;0;48;0;48;48  BODY:2   ;0;0;96;0;48;48  BODY:3   ;0;0;144;0;48;48  
+HEAD:0   ;9;-14;0;0;32;32  HEAD:1   ;6;-16;0;32;32;32  HEAD:2   ;8;-16;0;64;32;32  HEAD:3   ;10;-16;0;96;32;32
+
+!9 = Sitting
+BODY:0   ;0;-2;0;336;48;48  BODY:1   ;0;-2;48;336;48;48  BODY:2   ;0;-2;96;336;48;48  BODY:3   ;0;-2;144;336;48;48  
+HEAD:0   ;9;-12;0;0;32;32  HEAD:1   ;6;-15;0;32;32;32  HEAD:2   ;8;-15;0;64;32;32  HEAD:3   ;10;-15;0;96;32;32

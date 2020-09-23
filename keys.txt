@@ -1,0 +1,15 @@
+Aeon Nexus Keys:
+
+In Game:
+Left Arrow: Left
+Right Arrow: Right
+Up Arrow: Up
+Down Arrow: Down
+O: Options Screen
+E: Go to edit mode
+Esc: bring up menu
+N: Change Player Name
+L: Login to  server
+
+In Editor:
+S: Save map
